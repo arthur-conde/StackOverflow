@@ -1,0 +1,7 @@
+<Project>
+  <ItemDefinitionGroup>
+    <Reference>
+      <Private Condition="$([System.String]::new('%(Reference.FullPath)').Contains('Library'))">false</Private>
+    </Reference>
+  </ItemDefinitionGroup>
+</Project>
